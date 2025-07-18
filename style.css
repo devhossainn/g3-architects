@@ -40,10 +40,14 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .text-right {
   text-align: right;
 }
 /* spacing */
+.mb-14 {
+  margin-bottom: 14rem;
+}
 .mt-10 {
   margin-top: 10rem;
 }
@@ -68,8 +72,9 @@ body {
   color: var(--gray-400);
   font-size: 1.6rem;
   font-weight: 400;
-  line-height: 2.4rem;
+  line-height: 2.8rem;
   margin: 2rem 0;
+  max-width: 70rem;
 }
 /* button  */
 .btn-primary {
@@ -78,7 +83,7 @@ body {
   font-size: 1.6rem;
   font-weight: 600;
   letter-spacing: 1px;
-  padding: 1.6rem 2.2rem;
+  padding: 1.8rem 2.5rem;
   background: var(--color-primary);
   border-radius: 0.8rem;
   transition: all 0.3s;
@@ -166,6 +171,62 @@ header {
   color: var(--color-primary);
   display: block;
 }
+/* experience */
+.experience-content {
+  display: flex;
+  gap: 15rem;
+}
+.experience-img img {
+  width: 100%;
+}
+
+.experience-detail {
+  max-width: 50%;
+}
+.experience-detail > .section-title {
+  padding-left: 2rem;
+  border-left: 5px solid var(--color-primary);
+}
+
+.experience-items {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  /* margin-top: 3rem; */
+}
+.experience-item {
+  padding: 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 0.8rem;
+}
+.experience-item > .section-title {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.8rem;
+}
+/* experience badge */
+#experience-badge {
+  padding: 2.8rem;
+  margin-top: -8rem;
+  margin-left: -10rem;
+}
+#experience-badge:hover {
+  color: var(--gray-100);
+  background-color: var(--color-primary);
+  cursor: default;
+}
+#experience-badge .badge {
+  display: block;
+}
+#experience-badge .badge-text-1 {
+  font-size: 6.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+#experience-badge .badge-text-2 {
+  font-size: 2rem;
+  font-weight: 400;
+}
 /* mobile responsive */
 @media screen and (max-width: 576px) {
   /* nav and banner */
@@ -202,6 +263,21 @@ header {
   .color-gray,
   .color-dark,
   .color-primary {
+    font-size: 3.2rem;
+    line-height: 4.2rem;
+  }
+  /* experience */
+  .experience-content {
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+  .experience-img #experience-badge {
+    display: none;
+  }
+  .experience-detail {
+    max-width: 100%;
+  }
+  .experience-detail > .section-title {
     font-size: 3.2rem;
     line-height: 4.2rem;
   }
