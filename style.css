@@ -122,7 +122,7 @@ header {
 /* banner section styling */
 .banner-content {
   max-width: 86rem;
-  margin: 2rem auto;
+  margin: 0 auto;
 }
 .banner-content > .section-title {
   margin: 2rem 0;
@@ -133,7 +133,10 @@ header {
 .banner .banner-img {
   width: 100%;
 }
-/* responsive */
+.banner-content .btn-primary {
+  margin: 1rem 0 5rem 0;
+}
+/* mobile responsive */
 @media screen and (max-width: 576px) {
   .nav-content,
   .nav-links {
