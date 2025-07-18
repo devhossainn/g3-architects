@@ -16,7 +16,7 @@ body {
 .container {
   max-width: 1440px;
   margin: 0 auto;
-  width: 100%;
+  width: 90%;
 }
 :root {
   --bg-primary: rgba(255, 144, 14, 0.1);
@@ -73,6 +73,11 @@ body {
 }
 /* button  */
 .btn-primary {
+  display: inline-block;
+  color: var(--gray-100);
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 1px;
   padding: 2rem 2.6rem;
   background: var(--color-primary);
   border-radius: 0.8rem;
@@ -81,21 +86,11 @@ body {
   border: 1px solid transparent;
 }
 
-.btn-primary a {
-  color: var(--gray-100);
-  font-size: 1.8rem;
-  font-weight: 600;
-  letter-spacing: 1px;
-}
-
 /* button hover */
 .btn-primary:hover {
+  color: var(--color-primary);
   background-color: #fff;
   border: 1px solid var(--color-primary);
-}
-
-.btn-primary:hover a {
-  color: var(--color-primary);
 }
 
 /*header and navbar  */
@@ -140,9 +135,6 @@ header {
 }
 /* responsive */
 @media screen and (max-width: 576px) {
-  .container {
-    padding: 0 16px;
-  }
   .nav-content,
   .nav-links {
     flex-direction: column;
