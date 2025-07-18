@@ -252,6 +252,31 @@ header {
   font-size: 1.8rem;
   font-weight: 600;
 }
+/* sponsors section styling */
+.sponsors > .section-description {
+  max-width: 60rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+.sponsors-group {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 5rem;
+  margin-top: 6rem;
+}
+.sponsors-group .sponsors-img > img {
+  filter: grayscale(100%);
+}
+/* footer */
+.footer {
+  padding: 4rem 0;
+  background: var(--bg-secondary);
+}
+.footer p {
+  margin: 0 auto;
+  font-size: 2rem;
+  text-align: center;
+}
 /* mobile responsive */
 @media screen and (max-width: 576px) {
   /* nav and banner */
@@ -306,8 +331,9 @@ header {
     font-size: 3.2rem;
     line-height: 4.2rem;
   }
-  /* facts */
-  .facts-group {
+  /* facts, sponsors */
+  .facts-group,
+  .sponsors-group {
     grid-template-columns: 1fr;
   }
 }
